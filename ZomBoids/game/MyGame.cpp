@@ -26,6 +26,9 @@ void CMyGame::OnUpdate()
 	if (IsGameOverMode()) return;
 	Uint32 t = GetTime();
 	for each (CZombie * pZom in Zombies) {
+		if (pZom->GetHealth() <= 0) {
+			pZom->ChangeState(CZombie::DEAD);
+		}
 		pZom->Update(t); // zombie update code is run 
 		for each (Bullet* pBullet in BulletList)
 		{
@@ -34,25 +37,23 @@ void CMyGame::OnUpdate()
 				switch (pBullet->GetStatus()) { //reducing weaponm damage based on distance from origin of where it was shot
 				case 1:
 					if (distanceFromOrigin < 200) {
-						pZom->SetHealth(pZom->GetHealth() - 50);
+						pZom->SetHealth(0);
 					}
-					else pZom->SetHealth(0);
+					else pZom->SetHealth(pZom->GetHealth() - 50);
 					break;
 				case 2:
 					pZom->SetHealth(0);
 					break;
 				case 3:
 					if (distanceFromOrigin < 100) {
-						pZom->SetHealth(pZom->GetHealth() - 50);
+						pZom->SetHealth(0);
 					}
-					else pZom->SetHealth(0);
+					else pZom->SetHealth(pZom->GetHealth() -50);
+					break;
 				}
                 pBullet->Delete();
             }
         }
-		if (pZom->GetHealth() < 0) {
-			pZom->ChangeState(CZombie::DEAD); 
-		}
 	} 
 	Zombies.delete_if(deleted); // delete dead zombies
 	zombieSpawn();// zombie spawner function
@@ -183,6 +184,7 @@ void CMyGame::OnInitialize()
 		pzombie->SetSize(50, 50);
 		pzombie->SetDirection(rand() % 360);
 		pzombie->SetSpeed(100);
+		pzombie->SetHealth(100);
 		pzombie->ChangeState(CZombie::CHASE);
 		Zombies.push_back(pzombie);
 	}
@@ -291,6 +293,7 @@ void CMyGame::zombieSpawn() { // zombie spawner function
 			pzombie->SetSize(50, 50);
 			pzombie->SetDirection(rand() % 360);
 			pzombie->SetSpeed(100);
+			pzombie->SetHealth(100);
 			pzombie->ChangeState(CZombie::CHASE);
 			Zombies.push_back(pzombie);
 			spawnTimer = 0;
@@ -374,7 +377,7 @@ void CMyGame::OnLButtonDown(Uint16 x,Uint16 y)
             pBullet->SetRotation(pBullet->GetDirection());
             pBullet->SetSpeed(1000);
 			pBullet->setBulletOrigin(pBullet->GetPos());
-			pBullet->SetStatus(2);
+			pBullet->SetStatus(3);
 			BulletList.push_back(pBullet);
         }
 	}
@@ -388,7 +391,7 @@ void CMyGame::OnLButtonDown(Uint16 x,Uint16 y)
         pBullet->SetRotation(pBullet->GetDirection());
         pBullet->SetSpeed(1500);
 		pBullet->setBulletOrigin(pBullet->GetPos());
-		pBullet->SetStatus(3);
+		pBullet->SetStatus(2);
 		BulletList.push_back(pBullet);
     }
 }

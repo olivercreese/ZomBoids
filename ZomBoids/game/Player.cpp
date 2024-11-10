@@ -70,7 +70,7 @@ void Player::FireWeapon()
 void Player::Reload() {
     switch (weapon) {
     case PISTOL:
-        if (pistol_ammo > 0 && pistol_ammo >10) {
+        if (pistol_ammo > 0 && pistol_ammo >=10) {
             pistol_ammo += pistol_clip;
             pistol_clip = 10;
             pistol_ammo -= 10;
@@ -81,7 +81,7 @@ void Player::Reload() {
         }
         break;
     case RIFLE:
-        if (rifle_ammo > 0 && rifle_ammo>30) {
+        if (rifle_ammo > 0 && rifle_ammo>=30) {
             rifle_ammo += rifle_clip;
             rifle_clip = 30;
             rifle_ammo -= 30;
@@ -92,7 +92,7 @@ void Player::Reload() {
         }
         break;
     case SHOTGUN:
-        if (shotgun_ammo > 0 && shotgun_ammo>5) {
+        if (shotgun_ammo > 0 && shotgun_ammo>=5) {
             shotgun_ammo += shotgun_clip;
             shotgun_clip = 5;
             shotgun_ammo -= 5;

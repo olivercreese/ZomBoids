@@ -287,7 +287,7 @@ void CZombie::OnUpdate(Uint32 time, Uint32 deltaTime)
 		}
 		break;
 	case ATTACK:
-		if (GetCurrentAnimationFrame() == 5 && HitTest(player)  ) { game.player.SetHealth(game.player.GetHealth() - 25); ChangeState(CHASE); }
+		if (GetCurrentAnimationFrame() == 5 && HitTest(player) && game.player.GetHealth() > 0 ) { game.player.SetHealth(game.player.GetHealth() - 25); ChangeState(CHASE); }
 		if (GetCurrentAnimationFrame() == 8) {
 			ChangeState(CHASE);
 		}
