@@ -223,7 +223,7 @@ void Player::OnUpdate(Uint32 time, Uint32 deltaTime)
         SetSpeed(playerSpeed);
         if (game.IsKeyDown(SDLK_LSHIFT) && canSprint) {
             SetSpeed(playerSpeed +50);
-            stamina -= 0.3f;
+            stamina -= 0.6f;
         }
         else if (stamina < 100 && !game.IsKeyDown(SDLK_LSHIFT)){
             stamina += 0.1f;

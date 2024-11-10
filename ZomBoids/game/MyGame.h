@@ -10,8 +10,6 @@ class CMyGame : public CGame
 {
 	// my own member functions
 
-void SetupLevel1();
-void SetupLevel2();
 
 public:
 	CMyGame(void);
@@ -39,21 +37,14 @@ public:
 
 	// Game Life Cycle
 	virtual void OnInitialize();
-	virtual void OnDisplayMenu();
 	virtual void OnStartGame();
-	virtual void OnStartLevel(Sint16 nLevel);
 	virtual void zombieSpawn();
-	virtual void OnGameOver();
-	virtual void OnTerminate();
 	virtual void spawnAmmoBox(CVector pos);
 
 	// Keyboard Event Handlers
 	virtual void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
-	virtual void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
 
 	// Mouse Events Handlers
 	virtual void OnMouseMove(Uint16 x,Uint16 y,Sint16 relx,Sint16 rely,bool bLeft,bool bRight,bool bMiddle);
 	virtual void OnLButtonDown(Uint16 x,Uint16 y);
-	virtual void OnLButtonUp(Uint16 x,Uint16 y);
-	virtual void OnMButtonUp(Uint16 x,Uint16 y);
 };

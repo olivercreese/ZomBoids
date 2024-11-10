@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\MyGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\MyGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\MyGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\MyGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Zombie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\Zombie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E0EAE92-E2E2-4A0F-9C83-EEC6B4DA5A00}|game\\game.vcxproj|solutionrelative:game\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyGame.h",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\MyGame.h",
+              "RelativeDocumentMoniker": "game\\MyGame.h",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\MyGame.h",
+              "RelativeToolTip": "game\\MyGame.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-10T14:45:48.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Zombie.h",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Zombie.h",
+              "RelativeDocumentMoniker": "game\\Zombie.h",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Zombie.h",
+              "RelativeToolTip": "game\\Zombie.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-10T14:45:49.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.h",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Player.h",
+              "RelativeDocumentMoniker": "game\\Player.h",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Player.h",
+              "RelativeToolTip": "game\\Player.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-10T14:45:48.956Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\main.cpp",
+              "RelativeDocumentMoniker": "game\\main.cpp",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\main.cpp",
+              "RelativeToolTip": "game\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-10T14:59:50.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyGame.cpp",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\MyGame.cpp",
+              "RelativeDocumentMoniker": "game\\MyGame.cpp",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\MyGame.cpp",
+              "RelativeToolTip": "game\\MyGame.cpp",
+              "ViewState": "AQIAALoAAAAAAAAAAAAAAN0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-10T14:45:44.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Zombie.cpp",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Zombie.cpp",
+              "RelativeDocumentMoniker": "game\\Zombie.cpp",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Zombie.cpp",
+              "RelativeToolTip": "game\\Zombie.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-10T14:45:45.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Player.cpp",
+              "RelativeDocumentMoniker": "game\\Player.cpp",
+              "ToolTip": "D:\\GitHub Desktop\\ZomBoids\\ZomBoids\\game\\Player.cpp",
+              "RelativeToolTip": "game\\Player.cpp",
+              "ViewState": "AQIAANoAAAAAAAAAAAAAAPkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-10T14:45:46.399Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
