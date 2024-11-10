@@ -7,6 +7,8 @@ CMyGame::CMyGame(void) :
 	startScreen(GetWidth(), GetHeight(), "NewStartScreen.png", 0),PlayerCollisionBox(0, 0, 20, 20,CColor::White(), 0)
 {
 	player.OnStart();
+	startScreen.LoadImage("ControlsScreen.bmp", "ControlsScreen");
+
 }
 
 CMyGame::~CMyGame(void)
@@ -309,7 +311,9 @@ void CMyGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
 		NewGame();
 		Zombies.clear();
 	}
-	if (IsMenuMode() && sym == SDLK_SPACE) StartGame();
+	if (IsMenuMode() && sym == SDLK_SPACE && !inControlsMenu) StartGame();
+	if (IsMenuMode() && sym == SDLK_LCTRL && !inControlsMenu) {inControlsMenu = true; startScreen.SetImage("ControlsScreen");}
+	else if (IsMenuMode() && sym == SDLK_ESCAPE && inControlsMenu) { inControlsMenu = false; startScreen.SetImage("NewStartScreen.png"); }
 
 	if (sym == SDLK_r && player.GetWeaponAmmo() > 0 && !player.getReloading()) {
 		player.ChangeState(Player::RELOAD);

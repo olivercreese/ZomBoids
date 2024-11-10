@@ -16,6 +16,7 @@ public:
 	~CMyGame(void);
 	Player player;	// player sprite
 	CSprite startScreen;
+	
 	CSprite gameworld;
 	CSpriteList BulletList;
 	CSpriteList Zombies;
@@ -28,6 +29,7 @@ public:
 	int spawnTimer;
 	float deathTimer;
 	float timer;
+	bool inControlsMenu;
 	vector<CVector> spawnPoints;
 	CVector mousePos;
 	// Per-Frame Callback Funtions (must be implemented!)
