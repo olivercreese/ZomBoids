@@ -23,7 +23,6 @@ public:
 	CSpriteList CollisionBoxes;
 	CSpriteList ammoboxes;
 	CSpriteRect PlayerCollisionBox;
-	CSprite Bullet;
 	CSprite GameOverText;
 	int level;
 	int spawnTimer;

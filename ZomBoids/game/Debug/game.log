@@ -1,5 +1,117 @@
-﻿  main.cpp
+﻿  MyGame.cpp
 D:\GitHub Desktop\ZomBoids\ZomBoids\game\Player.h(52,28): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/main.cpp')
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(35,29): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(110,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(110,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(133,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(135,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(136,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(141,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(142,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(151,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(151,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(162,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(162,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,56): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,56): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,56): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,56): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,56): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,42): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,42): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,42): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,42): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(174,42): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(176,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,57): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,57): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,57): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,57): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,57): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,43): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,43): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,43): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,43): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(282,43): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(284,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,70): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,70): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,70): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,70): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,70): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,49): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,49): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,49): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,49): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(349,49): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,71): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,71): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,71): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,71): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,71): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,50): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,50): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,50): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,50): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(363,50): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,76): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,76): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,76): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,76): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,76): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
+  
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,55): warning C4244: 'argument': conversion from 'T' to 'Sint16', possible loss of data
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,55): warning C4244:         with
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,55): warning C4244:         [
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,55): warning C4244:             T=float
+D:\GitHub Desktop\ZomBoids\ZomBoids\game\MyGame.cpp(377,55): warning C4244:         ]
+  (compiling source file '/MyGame.cpp')
   
   game.vcxproj -> D:\GitHub Desktop\ZomBoids\ZomBoids\Debug\game.exe

@@ -192,6 +192,7 @@ $(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bullet.h" />
     <ClInclude Include="CFVector.h" />
     <ClInclude Include="MyGame.h" />
     <ClInclude Include="Player.h" />

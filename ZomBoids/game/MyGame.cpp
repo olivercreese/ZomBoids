@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "MyGame.h"
 #include "Zombie.h"
+#include "Bullet.h"
 #include <iostream>
 
 CMyGame::CMyGame(void) :
@@ -26,13 +27,32 @@ void CMyGame::OnUpdate()
 	Uint32 t = GetTime();
 	for each (CZombie * pZom in Zombies) {
 		pZom->Update(t); // zombie update code is run 
-		for (CSprite* pBullet : BulletList)
+		for each (Bullet* pBullet in BulletList)
 		{
 			if (pZom->HitTest(pBullet)) {
-                pZom->ChangeState(CZombie::DEAD); // zombie is killed
+				int distanceFromOrigin = pBullet->GetPos().Distance(pBullet->getBulletOrigin());
+				switch (pBullet->GetStatus()) { //reducing weaponm damage based on distance from origin of where it was shot
+				case 1:
+					if (distanceFromOrigin < 200) {
+						pZom->SetHealth(pZom->GetHealth() - 50);
+					}
+					else pZom->SetHealth(0);
+					break;
+				case 2:
+					pZom->SetHealth(0);
+					break;
+				case 3:
+					if (distanceFromOrigin < 100) {
+						pZom->SetHealth(pZom->GetHealth() - 50);
+					}
+					else pZom->SetHealth(0);
+				}
                 pBullet->Delete();
             }
         }
+		if (pZom->GetHealth() < 0) {
+			pZom->ChangeState(CZombie::DEAD); 
+		}
 	} 
 	Zombies.delete_if(deleted); // delete dead zombies
 	zombieSpawn();// zombie spawner function
@@ -150,8 +170,6 @@ void CMyGame::OnInitialize()
 	gameworld.SetSize(1300, 1000);
 	GameOverText.LoadImage("GameOver.png", "GameOver",CColor::Black());
 	GameOverText.SetImage("GameOver");
-	Bullet.LoadImage("bullet.bmp", "bullet", CColor::Green());
-	Bullet.SetImage("bullet");
 	spawnPoints.push_back(CVector(0, 500)); //vector of spawn points for zombies
 	spawnPoints.push_back(CVector(170, 1000));
 	spawnPoints.push_back(CVector(1296, 671));
@@ -335,35 +353,41 @@ void CMyGame::OnLButtonDown(Uint16 x,Uint16 y)
 		player.FireWeapon(); // player ammo is reduced
 		CVector gunNozzleOffset = CVector(11 * cos(DEG2RAD(player.GetRotation())) + 21 * sin(DEG2RAD(player.GetRotation())), 21 * cos(DEG2RAD(player.GetRotation())) - 11 * sin(DEG2RAD(player.GetRotation())));
 		CVector gunNozzlePos = player.GetPosition() + gunNozzleOffset; // bullet spawn position is calculated based on player position and rotation 
-		CSprite* pBullet = new CSprite(gunNozzlePos.GetX(), gunNozzlePos.GetY(), "bullet.bmp", CColor::Green(), GetTime());
-		BulletList.push_back(pBullet); 
+		Bullet* pBullet = new Bullet(gunNozzlePos.GetX(), gunNozzlePos.GetY(), GetTime());
 		pBullet->SetSize(20, 20);
 		pBullet->SetDirection(player.GetRotation());
 		pBullet->SetRotation(pBullet->GetDirection());
 		pBullet->SetSpeed(1000);
+		pBullet->setBulletOrigin(pBullet->GetPos());
+		pBullet->SetStatus(1);
+		BulletList.push_back(pBullet);
     }
 	if (player.GetWeapon() == Player::SHOTGUN && player.getWeaponClip() > 0 && !player.getReloading()) {
 		player.FireWeapon();
 		CVector gunNozzleOffset = CVector(11 * cos(DEG2RAD(player.GetRotation())) + 21 * sin(DEG2RAD(player.GetRotation())), 21 * cos(DEG2RAD(player.GetRotation())) - 11 * sin(DEG2RAD(player.GetRotation())));
 		CVector gunNozzlePos = player.GetPosition() + gunNozzleOffset;
 		for (int i = 0; i < 5; i++) {
-            CSprite* pBullet = new CSprite(gunNozzlePos.GetX(), gunNozzlePos.GetY(), "bullet.bmp", CColor::Green(), GetTime());
-            BulletList.push_back(pBullet);
+			Bullet* pBullet = new Bullet(gunNozzlePos.GetX(), gunNozzlePos.GetY(),GetTime());
             pBullet->SetSize(20, 20);
             pBullet->SetDirection(player.GetRotation() + (rand() % 20 - 10));
             pBullet->SetRotation(pBullet->GetDirection());
             pBullet->SetSpeed(1000);
+			pBullet->setBulletOrigin(pBullet->GetPos());
+			pBullet->SetStatus(2);
+			BulletList.push_back(pBullet);
         }
 	}
 	if (player.GetWeapon() == Player::RIFLE && player.getWeaponClip() > 0 && !player.getReloading()) {
         player.FireWeapon();
         CVector gunNozzleOffset = CVector(11 * cos(DEG2RAD(player.GetRotation())) + 21 * sin(DEG2RAD(player.GetRotation())), 21 * cos(DEG2RAD(player.GetRotation())) - 11 * sin(DEG2RAD(player.GetRotation())));
         CVector gunNozzlePos = player.GetPosition() + gunNozzleOffset;
-        CSprite* pBullet = new CSprite(gunNozzlePos.GetX(), gunNozzlePos.GetY(), "bullet.bmp", CColor::Green(), GetTime());
-        BulletList.push_back(pBullet);
+        Bullet* pBullet = new Bullet(gunNozzlePos.GetX(), gunNozzlePos.GetY(), GetTime());
         pBullet->SetSize(20, 20);
         pBullet->SetDirection(player.GetRotation());
         pBullet->SetRotation(pBullet->GetDirection());
         pBullet->SetSpeed(1500);
+		pBullet->setBulletOrigin(pBullet->GetPos());
+		pBullet->SetStatus(3);
+		BulletList.push_back(pBullet);
     }
 }
