@@ -1,0 +1,13 @@
+﻿  Player.cpp
+E:\university\yearTwo\Graphics and AI\ZombieGame\worldscroller\game\Player.h(52,28): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '/Player.cpp')
+  
+E:\university\yearTwo\Graphics and AI\ZombieGame\worldscroller\game\Player.cpp(223,18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/Player.cpp')
+  
+E:\university\yearTwo\Graphics and AI\ZombieGame\worldscroller\game\Player.cpp(225,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file '/Player.cpp')
+  
+E:\university\yearTwo\Graphics and AI\ZombieGame\worldscroller\game\Player.cpp(282,1): warning C4715: 'Player::GetWeaponAmmo': not all control paths return a value
+E:\university\yearTwo\Graphics and AI\ZombieGame\worldscroller\game\Player.cpp(296,1): warning C4715: 'Player::getWeaponClip': not all control paths return a value
+  game.vcxproj -> E:\university\yearTwo\Graphics and AI\ZombieGame\worldscroller\Debug\game.exe
