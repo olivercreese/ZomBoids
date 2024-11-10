@@ -66,6 +66,7 @@ void CMyGame::OnUpdate()
             Zombies.clear(); // zombies are cleared
             deathTimer = 0;
 			player.reset(); // player stats reset
+			ammoboxes.clear(); // ammo boxes cleared
         }
     }
 	else timer += (float)GetDeltaTime() / 1000; // game timer in seconds
@@ -305,14 +306,14 @@ void CMyGame::spawnAmmoBox(CVector pos) { // ammo box spawner function
 		pBox->SetStatus(1);
 		ammoboxes.push_back(pBox);
 	}
-	else if (0 + rand() % (60+player.GetShotgunAmmo()) == 0) {
+	else if (0 + rand() % (50+player.GetShotgunAmmo()) == 0) {
         CSprite* pBox = new CSprite(pos.GetX(), pos.GetY(), "shotgun_ammo.png", GetTime());
         pBox->SetSize(50, 50);
         pBox->SetPos(pos);
 		pBox->SetStatus(2);
         ammoboxes.push_back(pBox);
     }
-	else if (0 + rand() % (50+player.GetRifleAmmo()) == 0) {
+	else if (0 + rand() % (30+player.GetRifleAmmo()) == 0) {
         CSprite* pBox = new CSprite(pos.GetX(), pos.GetY(), "rifle_ammo.png", GetTime());
         pBox->SetSize(50, 50);
         pBox->SetPos(pos);
