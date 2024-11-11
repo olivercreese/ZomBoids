@@ -1,7 +1,7 @@
 #pragma once
 
 
-#define HORDELIM 4
+#define HORDELIM 40
 #include "Player.h"
 #include <random>
 
